@@ -1,0 +1,250 @@
+{
+  "chartDataLine": {
+    "labels": [
+      "MON",
+      "TUE",
+      "WED",
+      "THU",
+      "FRI"
+    ],
+    "datasets": [
+      {
+        "data": [
+          12,
+          19,
+          3,
+          5,
+          2
+        ],
+        "backgroundColor": [
+          "rgba(96, 123, 255,0.2)"
+        ],
+        "borderColor": [
+          "rgba(96, 123, 255,1)"
+        ],
+        "borderWidth": 1
+      }
+    ]
+  },
+  "chartDataBar": {
+    "2018": {
+      "labels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "datasets": [
+        {
+          "data": [
+            10,
+            15,
+            20,
+            5,
+            25,
+            30,
+            12,
+            8,
+            26,
+            23,
+            14,
+            3
+          ],
+          "backgroundColor": [
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)"
+          ],
+          "borderColor": [
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)"
+          ],
+          "borderWidth": 1
+        }
+      ]
+    },
+    "2017": {
+      "labels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "datasets": [
+        {
+          "data": [
+            2,
+            11,
+            21,
+            50,
+            20,
+            30,
+            42,
+            38,
+            26,
+            3,
+            24,
+            33
+          ],
+          "backgroundColor": [
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)",
+            "rgba(96, 123, 255,0.2)"
+          ],
+          "borderColor": [
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)",
+            "rgba(96, 123, 255,1)"
+          ],
+          "borderWidth": 1
+        }
+      ]
+    }
+  },
+  "projects": [
+    {
+      "title": "Mobile App",
+      "by": "Symu.co",
+      "price": "$1500",
+      "deadline": "15/5/2016",
+      "spentHours": "40",
+      "progress": "0.7",
+      "status": "Development",
+      "assignedTo": {
+        "name": "Dominic Lynton",
+        "role": "Frontend Dev"
+      }
+    },
+    {
+      "title": "New Dashboard",
+      "by": "Symu.co",
+      "price": "$1500",
+      "deadline": "10/8/2016",
+      "spentHours": "1",
+      "progress": "0.15",
+      "status": "Planning",
+      "assignedTo": {
+        "name": "Lyan Roach",
+        "role": "UI/UX Designer"
+      }
+    },
+    {
+      "title": "Landing Page",
+      "by": "Symu.co",
+      "price": "$1500",
+      "deadline": "10/4/2016",
+      "spentHours": "56",
+      "progress": "0.9",
+      "status": "Testing",
+      "assignedTo": {
+        "name": "Michelle Stewart",
+        "role": "Accountant"
+      }
+    },
+    {
+      "title": "Wordpress Theme",
+      "by": "Symu.co",
+      "price": "$1500",
+      "deadline": "10/12/2016",
+      "spentHours": "0",
+      "progress": "0",
+      "status": "Queued",
+      "assignedTo": {
+        "name": "Michelle Stewart",
+        "role": "Accountant"
+      }
+    },
+    {
+      "title": "New Website",
+      "by": "Symu.co",
+      "price": "$1500",
+      "deadline": "10/9/2016",
+      "spentHours": "59",
+      "progress": "1",
+      "status": "Completed",
+      "assignedTo": {
+        "name": "Michelle Stewart",
+        "role": "Accountant"
+      }
+    }
+  ],
+  "emails": [
+    {
+      "from": "Michelle Stewart",
+      "date": "Today, 5:32 PM",
+      "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra pulvinar neque ac elementum. Ut lobortis laoreet accumsan. Etiam mattis orci sed turpis",
+      "read": false
+    },
+    {
+      "from": "Jolene Slater",
+      "date": "Today, 5:32 PM",
+      "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra pulvinar neque ac elementum. Ut lobortis laoreet accumsan. Etiam mattis orci sed turpis",
+      "read": false
+    },
+    {
+      "from": "Lyall Roach",
+      "date": "Today, 5:32 PM",
+      "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra pulvinar neque ac elementum. Ut lobortis laoreet accumsan. Etiam mattis orci sed turpis",
+      "read": true
+    },
+    {
+      "from": "Ahmed elSayed",
+      "date": "Today, 5:32 PM",
+      "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra pulvinar neque ac elementum. Ut lobortis laoreet accumsan. Etiam mattis orci sed turpis",
+      "read": true
+    }
+  ]
+}
