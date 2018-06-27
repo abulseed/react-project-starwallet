@@ -9,6 +9,11 @@ body {
   border-radius: 0;
 } */
 
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  background-color: #FFFF00;
+  color: #FFC0CB;
+}
+
 .Toolbar {
   background-image: none;
   background-color: #2f3242;
@@ -22,11 +27,13 @@ body {
   height: 64px;
   z-index: 200;
   position: fixed;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .Logo {
-  margin-top: auto;
-  margin-bottom: auto;
   width: 85px;
   height: 64px;
 }
@@ -44,7 +51,33 @@ body {
   z-index: 100;
 }
 
-/* .NavItem .NavItem:hover {} */
+.NavigationItems {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 100%;
+}
+
+.NavigationItem {
+  margin: 10px 0;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.NavigationItem a {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.NavigationItem a:hover, .NavigationItem a:active, .NavigationItem a.active {
+  background-color: #2a2c3b;
+}
 
 .DropDownIcon {
   width: 16px;
@@ -68,6 +101,66 @@ body {
   padding: 0px;
   padding-right: 5px;
   height: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.EmailDetails {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.EmailBar {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ProjectDetails {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ProjectBar {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ProjectSection {
+  flex-grow: 1;
+}
+
+.ProjectSection:nth-child(2) {
+  flex-grow: 2;
+}
+
+.ProjectSection:last-child {
+  margin-left: auto;
+}
+
+.PanelListGroupHead {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.SalesReport {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .ProfileHead {
@@ -102,6 +195,28 @@ body {
   border-radius: 5px;
   color: whitesmoke;
   margin-bottom: 16px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.VerboseItem {
+  font-size: small;
+}
+
+.VerboseItem:nth-child(5) {
+  /* flex-grow: 1; */
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.VerboseItem:nth-child(7) {
+  /* flex-grow: 1; */
+  display: flex;
+  flex-flow: row;
+  align-items: center;
 }
 
 .panel {
@@ -133,15 +248,39 @@ body {
   color: whitesmoke;
 }
 
+.MainHeadline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+}
+
+.ShowSection {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
 .VerboseProjectsHeader {
   background-image: none;
   background-color: cornflowerblue;
   border: none;
   color: whitesmoke;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .VerboseProjectHeader {
+  margin: 10px 5px 10px 10px;
   color: whitesmoke;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .vertical-align {
