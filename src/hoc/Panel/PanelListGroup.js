@@ -1,6 +1,6 @@
 import React from 'react';
 import { Panel, ListGroup } from 'react-bootstrap';
-import Aux from '../Aux';
+import Aux from '../Auxiliary/Auxiliary';
 
 const widthFull = {
   width: '100%',
@@ -10,8 +10,8 @@ const PanelListGroup = (props) => (
   <Aux>
     <div
       style={widthFull}
-      className={`${props.headerStyle} text-center vcenter`}>
-      <p><strong>{props.heading}</strong></p>
+      className={`${props.headerStyle} text-center PanelListGroupHead`}>
+      {props.heading}
     </div>
     <ListGroup style={props.overflow} >
       {props.children}

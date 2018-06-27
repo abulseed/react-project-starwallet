@@ -1,6 +1,9 @@
 import React from 'react';
-import { Grid, Row, Col, ProgressBar } from 'react-bootstrap';
+import { ProgressBar, Image } from 'react-bootstrap';
 import withList from '../../../hoc/withList/withList';
+
+import Persona from '../../../assets/images/personas/p2.png';
+import MoreImage from '../../../assets/images/More.png';
 
 const VerboseProjectBar = (props) => {
   let bsStyle = "info";
@@ -18,45 +21,37 @@ const VerboseProjectBar = (props) => {
   }
 
   return (
-    <Grid style={barBorderStyle} className='noPadding VerboseProjectBar' fluid>
-      <Row>
-        <Col md={2}>
-          <Grid className='noPadding' fluid>
-            <Row className='noPadding'>
-              <Col className='noPadding'>
-                <p><small>{props.title}</small></p>
-              </Col>
-            </Row>
-            <Row className='noPadding'>
-              <Col className='noPadding'>
-                <p><small>{props.by}</small></p>
-              </Col>
-            </Row>
-          </Grid>
-        </Col>
-        <Col md={1}>
-          <p><small>{props.price}</small></p>
-        </Col>
-        <Col md={1}>
-          <p><small>{props.deadline}</small></p>
-        </Col>
-        <Col md={1}>
-          <p><small>{`${props.spentHours} ${props.spentHours === "1" ? 'hour' : 'hours'}`}</small></p>
-        </Col>
-        <Col md={2}>
-          <ProgressBar bsStyle={bsStyle} now={props.progress * 100} />
-        </Col>
-        <Col md={1}>
-          <p><small>Status</small></p>
-        </Col>
-        <Col md={3}>
-          <p><small>Assigned to</small></p>
-        </Col>
-        <Col md={1}>
-          <p><small>Assigned to</small></p>
-        </Col>
-      </Row>
-    </Grid>
+    <div style={barBorderStyle} className='VerboseProjectBar'>
+      <div className='VerboseItem'>
+        <div>{props.title}</div>
+        <div>{props.by}</div>
+      </div>
+      <div className='VerboseItem'>
+        {props.price}
+      </div>
+      <div className='VerboseItem'>
+        {props.deadline}
+      </div>
+      <div className='VerboseItem'>
+        {`${props.spentHours} ${props.spentHours === "1" ? 'hour' : 'hours'}`}
+      </div>
+      <div className='VerboseItem'>
+        {props.progress * 100}%<ProgressBar bsStyle={bsStyle} now={props.progress * 100} style={{ width: '150px', height: '5px', marginTop: '15px', marginLeft: '5px' }} />
+      </div>
+      <div className='VerboseItem'>
+        {props.status}
+      </div>
+      <div className='VerboseItem'>
+        <Image src={Persona} alt="Persona" className="PersonaIcon" />
+        <div>
+          <div>{props.assignedTo.name}</div>
+          <div>{props.assignedTo.role}</div>
+        </div>
+      </div>
+      <div className='VerboseItem'>
+        <Image src={MoreImage} alt="More" />
+      </div>
+    </div>
   );
 }
 

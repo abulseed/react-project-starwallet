@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Aux from '../Aux';
+import Aux from '../Auxiliary/Auxiliary';
 import { Modal } from 'react-bootstrap';
 
 const withErrorAxios = (WrappedComponent, axios) => {

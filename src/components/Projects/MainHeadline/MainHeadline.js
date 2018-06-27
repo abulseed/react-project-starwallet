@@ -1,29 +1,35 @@
 import React from 'react';
-import { Grid, Row, DropdownButton, MenuItem, Col } from 'react-bootstrap';
+import { DropdownButton, MenuItem } from 'react-bootstrap';
 
-const MainHeadline = (props) => (
-  <Grid className='noPadding' fluid>
-    <Row className='vertical-align'>
-      <Col md={2} className="text-left vcenter">
-        <p><strong>All Projects({props.projects.length})</strong></p>
-      </Col>
-      <Col md={4} className="text-left">
-        <p>Workflow</p>
-      </Col>
-      <Col md={5} className="text-right">
-        <p>Show projects:</p>
-      </Col>
-      <Col md={1} className="text-right">
+const MainHeadline = (props) => {
+  return (
+    <div className='noPadding MainHeadline'>
+      <div style={{ fontWeight: 'bold' }} className="text-left">
+        All Projects({props.projects.length})
+    </div>
+      <div className="text-left">
+        Workflow
+    </div>
+      <div className='ShowSection'>
+        <div style={{ marginTop: '6px', marginRight: '3px' }}>Show projects:</div>
         <DropdownButton
           onSelect={props.selected}
           bsStyle="default"
-          title="Show"
+          title={props.show}
           id='dropdown-basic-show-proj'>
-          {props.projects.map((proj, index) => <MenuItem key={index} eventKey={index}>{proj.title}</MenuItem>)}
+          {props.projects.reduce((acc, proj, index) => {
+            const status = proj.status;
+            if (!acc.includes(status)) {
+              acc.push(status);
+            }
+            return acc;
+          }, []).map((status, index) => {
+            return <MenuItem key={index} eventKey={status}>{status}</MenuItem>;
+          })}
         </DropdownButton>
-      </Col>
-    </Row>
-  </Grid>
-);
+      </div>
+    </div>
+  );
+}
 
 export default MainHeadline;

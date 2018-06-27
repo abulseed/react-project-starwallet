@@ -11,7 +11,6 @@ class HomeGrid extends Component {
 
   render() {
     const overflow = {
-      overflow: 'scroll',
       height: '100%',
       color: 'white',
       fontSize: 'xx-small'

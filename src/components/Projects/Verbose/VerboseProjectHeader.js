@@ -1,35 +1,31 @@
 import React from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
 
-const VerboseProjectHeader = () => (
-  <Grid className='VerboseProjectHeader' fluid>
-    <Row>
-      <Col md={2}>
-        <p><small><strong>Project title</strong></small></p>
-      </Col>
-      <Col md={1}>
-        <p><small><strong>Value</strong></small></p>
-      </Col>
-      <Col md={1}>
-        <p><small><strong>Deadline</strong></small></p>
-      </Col>
-      <Col md={1}>
-        <p><small><strong>Time Spent</strong></small></p>
-      </Col>
-      <Col md={2}>
-        <p><small><strong>Progress</strong></small></p>
-      </Col>
-      <Col md={1}>
-        <p><small><strong>Status</strong></small></p>
-      </Col>
-      <Col md={3}>
-        <p><small><strong>Assigned to</strong></small></p>
-      </Col>
-      <Col md={1}>
-        <p><small><strong>Assigned to</strong></small></p>
-      </Col>
-    </Row>
-  </Grid>
+const VerboseProjectHeader = (props) => (
+  <div className='VerboseProjectHeader' onClick={props.clicked}>
+    <div className='VerboseItem'>
+      Project title
+    </div>
+    <div className='VerboseItem'>
+      Value
+    </div>
+    <div className='VerboseItem'>
+      Deadline
+    </div>
+    <div className='VerboseItem'>
+      Time Spent
+    </div>
+    <div className='VerboseItem'>
+      Progress
+    </div>
+    <div className='VerboseItem'>
+      Status
+    </div>
+    <div className='VerboseItem'>
+      Assigned to
+    </div>
+    <div className='VerboseItem'>
+    </div>
+  </div>
 );
 
 export default VerboseProjectHeader;
