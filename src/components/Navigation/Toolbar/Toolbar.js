@@ -1,26 +1,19 @@
 import React from 'react';
 
-import Navbar from 'react-bootstrap/lib/Navbar';
-import Nav from 'react-bootstrap/lib/Nav';
-import NavItem from 'react-bootstrap/lib/NavItem';
-import NavDropdown from 'react-bootstrap/lib/NavDropdown';
-import MenuItem from 'react-bootstrap/lib/MenuItem';
-
 import Logo from '../../Logo/Logo';
 import RightPanel from './RightPanel/RightPanel';
-import { Grid, Row, Col } from 'react-bootstrap';
 
 const Toolbar = (props) => (
-  <Grid className="Toolbar">
-    <Row>
-      <Col md={10}>
-        <Logo />
-      </Col>
-      <Col md={2} >
-        <RightPanel />
-      </Col>
+  <div className="Toolbar">
+    {/* <Row> */}
+    <div>
+      <Logo />
+    </div>
+    <div>
+      <RightPanel />
+    </div>
 
-    </Row>
+    {/* </Row> */}
     {/* <NavItem eventKey={2} href="#">
         Link
       </NavItem>
@@ -31,7 +24,7 @@ const Toolbar = (props) => (
         <MenuItem divider />
         <MenuItem eventKey={3.4}>Separated link</MenuItem>
       </NavDropdown> */}
-  </Grid>
+  </div>
 );
 
 export default Toolbar;
