@@ -219,6 +219,19 @@
         "name": "Michelle Stewart",
         "role": "Accountant"
       }
+    },
+    {
+      "title": "Campaign",
+      "by": "Symu.co",
+      "price": "$1500",
+      "deadline": "3/2/2016",
+      "spentHours": "20",
+      "progress": "1",
+      "status": "Completed",
+      "assignedTo": {
+        "name": "Michelle Stewart",
+        "role": "Accountant"
+      }
     }
   ],
   "emails": [
