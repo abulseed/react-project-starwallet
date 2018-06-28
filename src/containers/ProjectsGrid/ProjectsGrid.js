@@ -54,7 +54,7 @@ class ProjectsGrid extends Component {
         return proj.status === this.state.selectedFilter;
       });
     }
-    if (this.state.sortOrder) {
+    if (this.state.sortOrder != null) {
       if (this.state.sortOrder === true) {
         projectList = projectList.sort(this.sortAsc)
       } else {
