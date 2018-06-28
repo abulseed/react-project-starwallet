@@ -293,3 +293,10 @@ body {
   vertical-align: middle;
   float: none;
 }
+
+.DoughnutPanel {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+}
